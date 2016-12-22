@@ -28,10 +28,18 @@ a img:focus {
   cursor: zoom-in;
 }
 .nav {
-  margin: 20px 100px 20px 20px;
+  margin: 10px 0;
+}
+@media only screen and (min-width: 768px) {
+  .nav {
+    margin: 20px 100px 20px 20px;
+  }
 }
 .nav__link {
   margin-right: 25px;
+}
+.nav__link:last-child {
+  margin-right: 0;
 }
 .nav__link-social {
   margin-right: 15px;
@@ -42,7 +50,6 @@ a img:focus {
   left: 0;
   width: 100%;
   z-index: 3;
-  text-shadow: 0 0 5px rgba(33, 42, 60, 0.43);
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -53,6 +60,7 @@ a img:focus {
     background: transparent;
     border-bottom: 1px solid transparent;
     color: white;
+    text-shadow: 0 0 5px rgba(33, 42, 60, 0.43);
   }
   .navbar-custom:hover,
   .navbar-custom:focus {
@@ -366,11 +374,28 @@ img::selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+.buffer-top-sm {
+  margin-top: 15px;
+}
+.buffer-top-md {
+  margin-top: 30px;
+}
+.buffer-top-lg {
+  margin-top: 45px;
+}
+.buffer-bottom-sm {
+  margin-bottom: 15px;
+}
+.buffer-bottom-md {
+  margin-bottom: 30px;
+}
+.buffer-bottom-lg {
+  margin-bottom: 45px;
+}
 article .container .row img {
   max-width: 100% !important;
   height: auto;
   display: inline-block;
-  margin: 30px 0;
   box-shadow: 0 0 5px rgba(33, 42, 60, 0.43);
 }
 article .container .row .video-container {
@@ -537,4 +562,7 @@ pre .clojure .title {
 }
 pre .deletion {
   color: #dc322f;
+}
+.addthis_inline_share_toolbox {
+  height: 47px;
 }
